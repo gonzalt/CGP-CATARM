@@ -17,7 +17,7 @@ public class MovingCube : MonoBehaviour
     {
         if (LastCube == null)
             LastCube = GameObject.Find("Start").GetComponent<MovingCube>();
-        //Fix start point of cube and spawn size.
+
         CurrentCube = this;
         GetComponent<Renderer>().material.color = GetRandomColor();
 
