@@ -14,11 +14,37 @@ public class MoveCameraUpwards : MonoBehaviour
 
 	public GameObject cameraHolder;
 
-	// Start is called before the first frame update
-	void Start()
+    public AudioClip placeClipOne;
+    public AudioClip placeClipTwo;
+    public AudioClip placeClipThree;
+    public AudioClip placeClipFour;
+
+    public AudioSource placeSourceOne;
+    public AudioSource placeSourceTwo;
+    public AudioSource placeSourceThree;
+    public AudioSource placeSourceFour;
+
+    public AudioSource[] splats = new AudioSource[3];
+
+    public int i = 0;
+
+
+    // Start is called before the first frame update
+    void Start()
 	{
 		cameraHolder = GameObject.Find("CameraForSandwich");
-	}
+
+        placeSourceOne.clip = placeClipOne;
+        placeSourceTwo.clip = placeClipTwo;
+        placeSourceThree.clip = placeClipThree;
+        placeSourceFour.clip = placeClipFour;
+
+        splats[0] = placeSourceOne;
+        splats[1] = placeSourceTwo;
+        splats[2] = placeSourceThree;
+        splats[3] = placeSourceFour;
+
+    }
 
 
 
@@ -33,7 +59,10 @@ public class MoveCameraUpwards : MonoBehaviour
 
 			cameraHolder.transform.position = startPosition;
 
+            var random = new Random();
 
+            i = Random.Range(0, splats.Length);
+            Debug.Log(i);
 			//cameraHolder.transform.Translate(0, 0.1f * Time.deltaTime, 0);
 
 			//placedIngredient = false;

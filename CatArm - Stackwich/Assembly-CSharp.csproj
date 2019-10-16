@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\MovingCube.cs" />
     <Compile Include="Assets\Scripts\MyMainMenuManagementScript.cs" />
     <Compile Include="Assets\Scripts\ScoreText.cs" />
+    <Compile Include="Assets\Scripts\SplatSound.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
