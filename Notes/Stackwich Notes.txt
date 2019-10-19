@@ -1,0 +1,11 @@
+tranform   scale - 0.0005
+mesh
+mesh renderer
+box collider center 0's, size 1's
+moving cube - move speed = 1
+material
+
+
+
+Pause Menu  
+https://www.youtube.com/watch?v=JivuXdrIHK0
